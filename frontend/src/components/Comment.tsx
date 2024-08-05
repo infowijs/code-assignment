@@ -1,7 +1,14 @@
 import {MessageProps} from "./Message";
 import Date from "./Date";
+import {useFetchData} from "../modules/utilities";
 
 export default function Comment({imageUrl, person, date, comment, me}: Partial<MessageProps>) {
+  const u = useFetchData(person)
+
+  if (u) {
+    return null;
+  }
+
   return (
     <>
       <div className="relative">
