@@ -11,14 +11,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <kotlin.version>1.6.10</kotlin.version>
+    <kotlin.version>1.7.21</kotlin.version>
 
     <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 
-    <vertx.version>4.3.3</vertx.version>
-    <junit-jupiter.version>5.7.0</junit-jupiter.version>
+    <vertx.version>4.5.9</vertx.version>
+    <junit-jupiter.version>5.9.1</junit-jupiter.version>
 
     <main.verticle>nl.infowijs.codeassignment.MainVerticle</main.verticle>
     <launcher.class>io.vertx.core.Launcher</launcher.class>
@@ -91,7 +91,7 @@
         <artifactId>kotlin-maven-plugin</artifactId>
         <version>${kotlin.version}</version>
         <configuration>
-          <jvmTarget>11</jvmTarget>
+          <jvmTarget>17</jvmTarget>
         </configuration>
         <executions>
           <execution>
@@ -128,8 +128,7 @@
                 </transformer>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
               </transformers>
-              <outputFile>${project.build.directory}/${project.artifactId}-${project.version}-fat.jar
-              </outputFile>
+              <outputFile>${project.build.directory}/${project.artifactId}-${project.version}-fat.jar</outputFile>
             </configuration>
           </execution>
         </executions>
@@ -148,14 +147,6 @@
             <argument>run</argument>
             <argument>${main.verticle}</argument>
           </arguments>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>8</source>
-          <target>8</target>
         </configuration>
       </plugin>
     </plugins>

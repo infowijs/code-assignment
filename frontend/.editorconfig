@@ -1,0 +1,26 @@
+# EditorConfig is not a linting tool. It's a file format that helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+
+root = true
+
+[*]
+# Indentation
+indent_style = space
+indent_size = 2
+
+# Line endings
+end_of_line = lf
+charset = utf-8
+
+# Trimming trailing whitespace
+trim_trailing_whitespace = true
+
+# Insert final newline
+insert_final_newline = true
+
+[*.{ts,tsx,js,jsx,json}]
+# Specific settings for TypeScript files
+indent_size = 2
+
+[*.md]
+# Markdown files typically have different rules
+trim_trailing_whitespace = false
