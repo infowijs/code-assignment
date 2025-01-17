@@ -1,10 +1,10 @@
 # Infowijs Code Assignment
 
-> Deze opdracht wordt toegepast voor het aannemen van iedereen binnen het Infowijs Engineering team. Deze opdracht is speciaal gemaakt om verschillende rollen de ervaring te geven zoals wij als T-shaped team ook met elkaar samenwerken.
+> Deze opdracht wordt toegepast voor het aannemen van iedereen binnen het Infowijs Engineering team. Deze opdracht is speciaal gemaakt om verschillende rollen de ervaring te geven zoals wij als multidisciplinair team ook met elkaar samenwerken.
 
 ## Welkom! 👋
 
-Hoy! Wat leuk dat je al zover gekomen bent. Wij willen graag een goed beeld van jouw manier van werken als software engineer en hebben daarom deze opdracht voor je gemaakt.
+Hoy! Wat leuk dat je al zover gekomen bent. Wij willen graag een goed beeld van jouw manier van werken als engineer en hebben daarom deze opdracht voor je gemaakt.
 
 De applicatie waar je mee aan de slag gaat is een web applicatie met een simpele berichten interface die net een week live staat. Echter zitten er hier en daar nog wat bugs in en missen we nog wat features. De frontend maakt verbinding met de backend via HTTP API's met een [JSON API formaat](http://jsonapi.org). Delen van de API zullen hardcoded gedefinieerd staan in de DAO's voor de simpelheid van deze opdracht. Het staat je vrij die data te verplaatsen naar een database en dit te tonen in je opdracht.
 
